@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Consta-Link</title>
+    <link rel="shortcut icon" href="assets/images/1.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="assets/css/rainbow.css" />
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8SYR3Y5HS9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8SYR3Y5HS9');
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul id="navList">
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="learnmore.html">Learn More</a></li>
+          <li><a href="rainbow.html">Rainbow</a></li>
+      </ul>
+      </nav>
+    </header>
+    <div id="contentContainer"></div>
+    <script>
+      // Function to load content dynamically
+      function loadContent(url) {
+          fetch(url)
+              .then(response => response.text())
+              .then(data => {
+                  document.getElementById('contentContainer').innerHTML = data;
+              })
+              .catch(error => console.error('Error fetching content:', error));
+      }
+
+      // Handle navigation clicks
+      document.getElementById('navList').addEventListener('click', function(event) {
+          if (event.target.tagName === 'A') {
+              event.preventDefault();
+              loadContent(event.target.getAttribute('href'));
+          }
+      });
+
+      // Initial load of the default content
+      loadContent('index.html');
+    </script>
+    <div id="particles-js"></div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="assets/js/particle.js"></script> <!-- particles.js configuration -->
+    <main>
+      <center><h1>Consta-Link</h1></center>
+      <p>
+        “The quieter you become, the more you are able to hear.” ~ Rumi
+      </p>
+      <center>
+        <form action="#">
+          <center><img src="assets/images/4.png" alt="Consta-Link Logo" style="width: 10%;height: 10%;border-radius: 50%;"/></center>
+          <li style="align-content: center;"><a href="https://discord.gg/MAUymPrwEZ">ÁñdreW#7998</a></li>
+        </form>
+      </center>
+    </main>
+    <footer>
+      <p>&copy; 2019 Consta-Link</p>
+    </footer>
+    <!--
+    <audio id="audio" src="assets/audio/music1.mp3"></audio>
+    <script>
+      // Wait for the user to load the page
+      document.addEventListener("click", function() {
+        var audio = document.getElementById("audio");
+        audio.volume = 0.4;
+        audio.play();
+      });
+    </script>
+    -->
+  </body>
+</html>
