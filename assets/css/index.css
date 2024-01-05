@@ -64,12 +64,13 @@ h1, h2 {
   color: #fff;
   margin-bottom: 1rem;
   color: rebeccapurple;
+  font: bolder;
 }
 
 a {
   background-color: rebeccapurple;
   border: 1px solid #333;
-  color: rgba(0, 0, 0, 0);
+  color: rgb(0, 0, 0);
   display: inline-block;
   font-size: 1rem;
   padding: 0.50rem 0.75rem;
@@ -86,6 +87,7 @@ main form label {
 
 li a{
   color: black;
+  font: bolder;
   align-items: center;
 }
 
