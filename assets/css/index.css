@@ -70,7 +70,7 @@ h1, h2 {
 a {
   background-color: rebeccapurple;
   border: 1px solid #333;
-  color: rgb(0, 0, 0);
+  color: black;
   display: inline-block;
   font-size: 1rem;
   padding: 0.50rem 0.75rem;
