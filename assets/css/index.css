@@ -275,14 +275,13 @@ main {
 h1,
 h2 {
 	margin-bottom: 1rem;
-	color: rebeccapurple;
 	font: bolder;
 }
 
 a {
-	background-color: rebeccapurple;
+	background-color: rgba(102, 51, 153, 0.391);
 	border: 1px solid #333;
-	color: rgb(69, 26, 128);
+	color: rgb(112, 9, 255);
 	display: inline-block;
 	font-size: 1rem;
 	padding: 0.5rem 0.75rem;
