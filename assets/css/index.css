@@ -1,445 +1,610 @@
 #particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #000000;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  z-index: -1;
-  cursor: default;
-  background-position: 50% 50%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+	z-index: -1;
+	cursor: default;
+	background-position: 50% 50%;
+}
+
+#aboutTitle:hover {
+	/* make it use the rainbow */
+	background-image: linear-gradient(
+		45deg,
+		rgb(89, 255, 0),
+		rgb(255, 51, 0) 33%,
+		rgb(0, 183, 255) 33%,
+		rgb(0, 255, 72) 66%,
+		rgb(0, 225, 255) 66%,
+		rgb(255, 0, 0),
+		rgb(255, 0, 0)
+	);
+	background-size: 50% 100%;
+	background-color: rgba(34, 0, 255, 0.424);
+	background-clip: text;
+	color: transparent;
+	animation: rainbow 3s linear infinite;
+}
+
+.project-container {
+	margin-bottom: 2rem;
+	font: serif;
+	/* make the content get auto sorted */
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 2rem;
+	align-items: center;
+	justify-items: center;
+}
+
+.project-description {
+	display: none;
+	margin-top: 10px;
+}
+
+.project-description {
+	display: none;
+	margin-top: 10px;
+}
+
+.project-description2 {
+	display: none;
+	margin-top: 10px;
+}
+
+.project-description3 {
+	display: none;
+	margin-top: 10px;
+}
+
+.project-description4 {
+	display: none;
+	margin-top: 10px;
+}
+
+.project-description5 {
+	display: none;
+	margin-top: 10px;
+}
+
+.project-description6 {
+	display: none;
+	margin-top: 10px;
 }
 
 
+.arrow {
+	background-image: linear-gradient(
+		-45deg,
+		rgb(255, 0, 0) 33%,
+		rgb(255, 174, 0) 66%,
+		rgb(234, 255, 0) 33%,
+		rgb(115, 255, 0) 66%,
+		#00f 27%,
+		rgb(255, 0, 0)
+	);
+	background-size: 50% 100%;
+	background-clip: text;
+	color: transparent;
+	animation: rainbow 1s linear infinite;
+	cursor: pointer;
+}
+
+.arrow-ptr2 {
+	background-image: linear-gradient(
+		-45deg,
+		rgb(255, 0, 0) 33%,
+		rgb(255, 174, 0) 66%,
+		rgb(234, 255, 0) 33%,
+		rgb(115, 255, 0) 66%,
+		#00f 27%,
+		rgb(255, 0, 0)
+	);
+	background-size: 50% 100%;
+	background-clip: text;
+	color: transparent;
+	animation: rainbow 1s linear infinite;
+	cursor: pointer;
+}
+
+.arrow-ptr3 {
+	background-image: linear-gradient(
+		-45deg,
+		rgb(255, 0, 0) 33%,
+		rgb(255, 174, 0) 66%,
+		rgb(234, 255, 0) 33%,
+		rgb(115, 255, 0) 66%,
+		#00f 27%,
+		rgb(255, 0, 0)
+	);
+	background-size: 50% 100%;
+	background-clip: text;
+	color: transparent;
+	animation: rainbow 1s linear infinite;
+	cursor: pointer;
+}
+
+.arrow-ptr4 {
+	background-image: linear-gradient(
+		-45deg,
+		rgb(255, 0, 0) 33%,
+		rgb(255, 174, 0) 66%,
+		rgb(234, 255, 0) 33%,
+		rgb(115, 255, 0) 66%,
+		#00f 27%,
+		rgb(255, 0, 0)
+	);
+	background-size: 50% 100%;
+	background-clip: text;
+	color: transparent;
+	animation: rainbow 1s linear infinite;
+	cursor: pointer;
+}
+
+.arrow-ptr5 {
+	background-image: linear-gradient(
+		-45deg,
+		rgb(255, 0, 0) 33%,
+		rgb(255, 174, 0) 66%,
+		rgb(234, 255, 0) 33%,
+		rgb(115, 255, 0) 66%,
+		#00f 27%,
+		rgb(255, 0, 0)
+	);
+	background-size: 50% 100%;
+	background-clip: text;
+	color: transparent;
+	animation: rainbow 1s linear infinite;
+	cursor: pointer;
+}
+
+.arrow-ptr6 {
+	background-image: linear-gradient(
+		-45deg,
+		rgb(255, 0, 0) 33%,
+		rgb(255, 174, 0) 66%,
+		rgb(234, 255, 0) 33%,
+		rgb(115, 255, 0) 66%,
+		#00f 27%,
+		rgb(255, 0, 0)
+	);
+	background-size: 50% 100%;
+	background-clip: text;
+	color: transparent;
+	animation: rainbow 1s linear infinite;
+	cursor: pointer;
+}
+
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 header {
-  background-color: #333;
-  color: #fff;
-  padding: 1px;
+	background-color: #333;
+	color: #fff;
+	padding: 1px;
 }
 
-
-
 nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 nav li {
-  margin: 0 10px;
-  padding: 0rem;
+	margin: 0 10px;
+	padding: 0rem;
 }
 
-li a{
-  background-color:  rgba(8, 6, 120, 0.39);
-  border: 1px solid #14197c;
-  border-color: #14197c;
-  font-size: 18px;
-  align-items: center;
+li a {
+	background-color: rgba(8, 6, 120, 0.39);
+	border: 1px solid #14197c;
+	border-color: #14197c;
+	font-size: 18px;
+	align-items: center;
 }
 
 li a:hover {
-  /* make it glow when hovered */
-  background-color: rgba(8, 6, 120, 0.703);
-  color: rgba(0, 30, 255, 0.7);
-  border-radius: 15px;
-  padding: 0.5rem 1.5rem;
-  text-align: center;
-  text-decoration: none;
+	/* make it glow when hovered */
+	background-color: rgba(8, 6, 120, 0.703);
+	color: rgba(0, 30, 255, 0.7);
+	border-radius: 15px;
+	padding: 0.5rem 1.5rem;
+	text-align: center;
+	text-decoration: none;
 }
 
 nav a {
-  margin-bottom: 20px;
-  font-family: 'PT Mono', monospace;
-  font-weight: bold;
-  font-size: 20px;
-  text-align: center;
-  background-image: linear-gradient(-45deg, rgb(255, 0, 0), rgb(123, 0, 255) 33%, rgb(34, 0, 255) 33%, rgb(34, 0, 255) 66%, #00f 66%, rgb(255, 0, 0));
-  background-size: 50% 100%;
-  background-clip: text;
-  background-color: rgba(34, 0, 255, 0.424);
-  -webkit-background-clip: text;
-  color: transparent;
-  animation: rainbow 3s linear infinite;
+	margin-bottom: 20px;
+	font-family: "PT Mono", monospace;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	background-image: linear-gradient(
+		-45deg,
+		rgb(255, 0, 0),
+		rgb(123, 0, 255) 33%,
+		rgb(34, 0, 255) 33%,
+		rgb(34, 0, 255) 66%,
+		#00f 66%,
+		rgb(255, 0, 0)
+	);
+	background-size: 50% 100%;
+	background-clip: text;
+	background-color: rgba(34, 0, 255, 0.424);
+	-webkit-background-clip: text;
+	color: transparent;
+	animation: rainbow 3s linear infinite;
 }
 
 nav a:hover {
-  margin-bottom: 20px;
-  font-family: 'PT Mono', monospace;
-  font-weight: bold;
-  font-size: 20px;
-  text-align: center;
-  background-image: linear-gradient(45deg, rgb(89, 255, 0), rgb(255, 51, 0) 33%, rgb(0, 183, 255) 33%, rgb(0, 255, 72) 66%, rgb(0, 225, 255) 66%, rgb(255, 0, 0), rgb(255, 0, 0));
-  background-size: 50% 100%;
-  background-color: rgba(34, 0, 255, 0.424);
-  background-clip: text;
-  color: transparent;
-  animation: rainbow 3s linear infinite;
+	margin-bottom: 20px;
+	font-family: "PT Mono", monospace;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	background-image: linear-gradient(
+		45deg,
+		rgb(89, 255, 0),
+		rgb(255, 51, 0) 33%,
+		rgb(0, 183, 255) 33%,
+		rgb(0, 255, 72) 66%,
+		rgb(0, 225, 255) 66%,
+		rgb(255, 0, 0),
+		rgb(255, 0, 0)
+	);
+	background-size: 50% 100%;
+	background-color: rgba(34, 0, 255, 0.424);
+	background-clip: text;
+	color: transparent;
+	animation: rainbow 3s linear infinite;
 }
 
 main {
-  padding: 2rem;
+	padding: 2rem;
 }
 
-section {
-  margin-bottom: 2rem;
-  font: serif;
-  /* make the content get auto sorted */
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 2rem;
-  align-items: center;
-  justify-items: center;
-}
-
-h1, h2 {
-  margin-bottom: 1rem;
-  color: rebeccapurple;
-  font: bolder;
+h1,
+h2 {
+	margin-bottom: 1rem;
+	color: rebeccapurple;
+	font: bolder;
 }
 
 a {
-  background-color: rebeccapurple;
-  border: 1px solid #333;
-  color: rgb(69, 26, 128);
-  display: inline-block;
-  font-size: 1rem;
-  padding: 0.50rem 0.75rem;
-  text-align: center;
-  text-decoration: none;
-  transition: background-color 0.3s;
-  border-radius: 10px;
-  
+	background-color: rebeccapurple;
+	border: 1px solid #333;
+	color: rgb(69, 26, 128);
+	display: inline-block;
+	font-size: 1rem;
+	padding: 0.5rem 0.75rem;
+	text-align: center;
+	text-decoration: none;
+	transition: background-color 0.3s;
+	border-radius: 10px;
 }
 
 main form label {
-  color: rebeccapurple;
+	color: rebeccapurple;
 }
 
-
 a:hover {
-  background-color: #555;
-  padding: 0.5rem 1.5rem;
+	background-color: #555;
+	padding: 0.5rem 1.5rem;
 }
 
 a:active {
-  background-color: #777;
+	background-color: #777;
 }
 
 form label {
-  display: block;
-  margin-bottom: 0.5rem;
-  color: #fff;
+	display: block;
+	margin-bottom: 0.5rem;
+	color: #fff;
 }
 
 form input,
 form textarea {
-  border: none;
-  border-radius: 5px;
-  padding: 0.5rem;
-  width: 100%;
+	border: none;
+	border-radius: 5px;
+	padding: 0.5rem;
+	width: 100%;
 }
 
-
 form input[type="submit"]:hover {
-  background-color: #555;
+	background-color: #555;
 }
 
 html,
 body {
-  height: 100%;
+	height: 100%;
 }
 
 img {
-  width: 66%;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 10px;
+	width: 66%;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
 }
-
 
 p {
-  border-radius: 5px;
-  background-color: #333;
-  padding: 1.5px;
-  text-align: center;
-  color: rgb(144, 36, 180);
-  font: bolder;
-  display: grid;
+	border-radius: 5px;
+	background-color: #333;
+	padding: 1.5px;
+	text-align: center;
+	color: rgb(144, 36, 180);
+	font: bolder;
+	display: grid;
 }
-
 
 @import url(https://fonts.google.com/specimen/PT+Mono);
 svg {
-  position: absolute;
-  width: 50%;
-  height: 50%;
+	position: absolute;
+	width: 50%;
+	height: 50%;
 }
 
 ::-webkit-scrollbar {
-  display: contents;
+	display: contents;
 }
 
 BODY {
-  background: #000;
+	background: #000;
 }
 
 svg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
 }
 
 .demo--text {
-  font: 12em/1 PT Mono, monospace;
-  letter-spacing: 0.05em;
-  pointer-events: none;
-  text-align: center;
+	font: 12em/1 PT Mono, monospace;
+	letter-spacing: 0.05em;
+	pointer-events: none;
+	text-align: center;
 }
 
 .symbols-item {
-  -webkit-animation: offset-direction 6s linear infinite;
-          animation: offset-direction 6s linear infinite;
-  fill: none;
-  stroke-width: 2;
+	-webkit-animation: offset-direction 6s linear infinite;
+	animation: offset-direction 6s linear infinite;
+	fill: none;
+	stroke-width: 2;
 }
-.symbols-item:nth-child(15n+1) {
-  -webkit-animation-delay: -0.0444444444s;
-          animation-delay: -0.0444444444s;
+.symbols-item:nth-child(15n + 1) {
+	-webkit-animation-delay: -0.0444444444s;
+	animation-delay: -0.0444444444s;
 }
-.symbols-item:nth-child(15n+2) {
-  -webkit-animation-delay: -0.0888888889s;
-          animation-delay: -0.0888888889s;
+.symbols-item:nth-child(15n + 2) {
+	-webkit-animation-delay: -0.0888888889s;
+	animation-delay: -0.0888888889s;
 }
-.symbols-item:nth-child(15n+3) {
-  -webkit-animation-delay: -0.1333333333s;
-          animation-delay: -0.1333333333s;
+.symbols-item:nth-child(15n + 3) {
+	-webkit-animation-delay: -0.1333333333s;
+	animation-delay: -0.1333333333s;
 }
-.symbols-item:nth-child(15n+4) {
-  -webkit-animation-delay: -0.1777777778s;
-          animation-delay: -0.1777777778s;
+.symbols-item:nth-child(15n + 4) {
+	-webkit-animation-delay: -0.1777777778s;
+	animation-delay: -0.1777777778s;
 }
-.symbols-item:nth-child(15n+5) {
-  -webkit-animation-delay: -0.2222222222s;
-          animation-delay: -0.2222222222s;
+.symbols-item:nth-child(15n + 5) {
+	-webkit-animation-delay: -0.2222222222s;
+	animation-delay: -0.2222222222s;
 }
-.symbols-item:nth-child(15n+6) {
-  -webkit-animation-delay: -0.2666666667s;
-          animation-delay: -0.2666666667s;
+.symbols-item:nth-child(15n + 6) {
+	-webkit-animation-delay: -0.2666666667s;
+	animation-delay: -0.2666666667s;
 }
-.symbols-item:nth-child(15n+7) {
-  -webkit-animation-delay: -0.3111111111s;
-          animation-delay: -0.3111111111s;
+.symbols-item:nth-child(15n + 7) {
+	-webkit-animation-delay: -0.3111111111s;
+	animation-delay: -0.3111111111s;
 }
-.symbols-item:nth-child(15n+8) {
-  -webkit-animation-delay: -0.3555555556s;
-          animation-delay: -0.3555555556s;
+.symbols-item:nth-child(15n + 8) {
+	-webkit-animation-delay: -0.3555555556s;
+	animation-delay: -0.3555555556s;
 }
-.symbols-item:nth-child(15n+9) {
-  -webkit-animation-delay: -0.4s;
-          animation-delay: -0.4s;
+.symbols-item:nth-child(15n + 9) {
+	-webkit-animation-delay: -0.4s;
+	animation-delay: -0.4s;
 }
-.symbols-item:nth-child(15n+10) {
-  -webkit-animation-delay: -0.4444444444s;
-          animation-delay: -0.4444444444s;
+.symbols-item:nth-child(15n + 10) {
+	-webkit-animation-delay: -0.4444444444s;
+	animation-delay: -0.4444444444s;
 }
-.symbols-item:nth-child(15n+11) {
-  -webkit-animation-delay: -0.4888888889s;
-          animation-delay: -0.4888888889s;
+.symbols-item:nth-child(15n + 11) {
+	-webkit-animation-delay: -0.4888888889s;
+	animation-delay: -0.4888888889s;
 }
-.symbols-item:nth-child(15n+12) {
-  -webkit-animation-delay: -0.5333333333s;
-          animation-delay: -0.5333333333s;
+.symbols-item:nth-child(15n + 12) {
+	-webkit-animation-delay: -0.5333333333s;
+	animation-delay: -0.5333333333s;
 }
-.symbols-item:nth-child(15n+13) {
-  -webkit-animation-delay: -0.5777777778s;
-          animation-delay: -0.5777777778s;
+.symbols-item:nth-child(15n + 13) {
+	-webkit-animation-delay: -0.5777777778s;
+	animation-delay: -0.5777777778s;
 }
-.symbols-item:nth-child(15n+14) {
-  -webkit-animation-delay: -0.6222222222s;
-          animation-delay: -0.6222222222s;
+.symbols-item:nth-child(15n + 14) {
+	-webkit-animation-delay: -0.6222222222s;
+	animation-delay: -0.6222222222s;
 }
-.symbols-item:nth-child(15n+15) {
-  -webkit-animation-delay: -0.6666666667s;
-          animation-delay: -0.6666666667s;
+.symbols-item:nth-child(15n + 15) {
+	-webkit-animation-delay: -0.6666666667s;
+	animation-delay: -0.6666666667s;
 }
 .symbols-item .text--item {
-  fill-opacity: 0.3;
-  -webkit-animation: anim-stroke 2s linear infinite alternate;
-          animation: anim-stroke 2s linear infinite alternate;
-  -webkit-animation-name: anim-move;
-          animation-name: anim-move;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+	fill-opacity: 0.3;
+	-webkit-animation: anim-stroke 2s linear infinite alternate;
+	animation: anim-stroke 2s linear infinite alternate;
+	-webkit-animation-name: anim-move;
+	animation-name: anim-move;
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
 }
-.symbols-item:nth-child(15n+1) .text--item {
-  stroke: red;
-  stroke-opacity: 0.4;
-  fill: red;
-  fill-opacity: 0.45;
-  -webkit-animation-delay: -0.0666666667s;
-          animation-delay: -0.0666666667s;
+.symbols-item:nth-child(15n + 1) .text--item {
+	stroke: red;
+	stroke-opacity: 0.4;
+	fill: red;
+	fill-opacity: 0.45;
+	-webkit-animation-delay: -0.0666666667s;
+	animation-delay: -0.0666666667s;
 }
-.symbols-item:nth-child(15n+2) .text--item {
-  stroke: #ff6a00;
-  stroke-opacity: 0.4;
-  fill: #ff6a00;
-  fill-opacity: 0.3;
-  -webkit-animation-delay: -0.1333333333s;
-          animation-delay: -0.1333333333s;
+.symbols-item:nth-child(15n + 2) .text--item {
+	stroke: #ff6a00;
+	stroke-opacity: 0.4;
+	fill: #ff6a00;
+	fill-opacity: 0.3;
+	-webkit-animation-delay: -0.1333333333s;
+	animation-delay: -0.1333333333s;
 }
-.symbols-item:nth-child(15n+3) .text--item {
-  stroke: #ffd500;
-  stroke-opacity: 0.4;
-  fill: #ffd500;
-  fill-opacity: 0.25;
-  -webkit-animation-delay: -0.2s;
-          animation-delay: -0.2s;
+.symbols-item:nth-child(15n + 3) .text--item {
+	stroke: #ffd500;
+	stroke-opacity: 0.4;
+	fill: #ffd500;
+	fill-opacity: 0.25;
+	-webkit-animation-delay: -0.2s;
+	animation-delay: -0.2s;
 }
-.symbols-item:nth-child(15n+4) .text--item {
-  stroke: #bfff00;
-  stroke-opacity: 0.4;
-  fill: #bfff00;
-  fill-opacity: 0.225;
-  -webkit-animation-delay: -0.2666666667s;
-          animation-delay: -0.2666666667s;
+.symbols-item:nth-child(15n + 4) .text--item {
+	stroke: #bfff00;
+	stroke-opacity: 0.4;
+	fill: #bfff00;
+	fill-opacity: 0.225;
+	-webkit-animation-delay: -0.2666666667s;
+	animation-delay: -0.2666666667s;
 }
-.symbols-item:nth-child(15n+5) .text--item {
-  stroke: #55ff00;
-  stroke-opacity: 0.4;
-  fill: #55ff00;
-  fill-opacity: 0.21;
-  -webkit-animation-delay: -0.3333333333s;
-          animation-delay: -0.3333333333s;
+.symbols-item:nth-child(15n + 5) .text--item {
+	stroke: #55ff00;
+	stroke-opacity: 0.4;
+	fill: #55ff00;
+	fill-opacity: 0.21;
+	-webkit-animation-delay: -0.3333333333s;
+	animation-delay: -0.3333333333s;
 }
-.symbols-item:nth-child(15n+6) .text--item {
-  stroke: #00ff15;
-  stroke-opacity: 0.4;
-  fill: #00ff15;
-  fill-opacity: 0.2;
-  -webkit-animation-delay: -0.4s;
-          animation-delay: -0.4s;
+.symbols-item:nth-child(15n + 6) .text--item {
+	stroke: #00ff15;
+	stroke-opacity: 0.4;
+	fill: #00ff15;
+	fill-opacity: 0.2;
+	-webkit-animation-delay: -0.4s;
+	animation-delay: -0.4s;
 }
-.symbols-item:nth-child(15n+7) .text--item {
-  stroke: #00ff80;
-  stroke-opacity: 0.4;
-  fill: #00ff80;
-  fill-opacity: 0.1928571429;
-  -webkit-animation-delay: -0.4666666667s;
-          animation-delay: -0.4666666667s;
+.symbols-item:nth-child(15n + 7) .text--item {
+	stroke: #00ff80;
+	stroke-opacity: 0.4;
+	fill: #00ff80;
+	fill-opacity: 0.1928571429;
+	-webkit-animation-delay: -0.4666666667s;
+	animation-delay: -0.4666666667s;
 }
-.symbols-item:nth-child(15n+8) .text--item {
-  stroke: #00ffea;
-  stroke-opacity: 0.4;
-  fill: #00ffea;
-  fill-opacity: 0.1875;
-  -webkit-animation-delay: -0.5333333333s;
-          animation-delay: -0.5333333333s;
+.symbols-item:nth-child(15n + 8) .text--item {
+	stroke: #00ffea;
+	stroke-opacity: 0.4;
+	fill: #00ffea;
+	fill-opacity: 0.1875;
+	-webkit-animation-delay: -0.5333333333s;
+	animation-delay: -0.5333333333s;
 }
-.symbols-item:nth-child(15n+9) .text--item {
-  stroke: #00aaff;
-  stroke-opacity: 0.4;
-  fill: #00aaff;
-  fill-opacity: 0.1833333333;
-  -webkit-animation-delay: -0.6s;
-          animation-delay: -0.6s;
+.symbols-item:nth-child(15n + 9) .text--item {
+	stroke: #00aaff;
+	stroke-opacity: 0.4;
+	fill: #00aaff;
+	fill-opacity: 0.1833333333;
+	-webkit-animation-delay: -0.6s;
+	animation-delay: -0.6s;
 }
-.symbols-item:nth-child(15n+10) .text--item {
-  stroke: #0040ff;
-  stroke-opacity: 0.4;
-  fill: #0040ff;
-  fill-opacity: 0.18;
-  -webkit-animation-delay: -0.6666666667s;
-          animation-delay: -0.6666666667s;
+.symbols-item:nth-child(15n + 10) .text--item {
+	stroke: #0040ff;
+	stroke-opacity: 0.4;
+	fill: #0040ff;
+	fill-opacity: 0.18;
+	-webkit-animation-delay: -0.6666666667s;
+	animation-delay: -0.6666666667s;
 }
-.symbols-item:nth-child(15n+11) .text--item {
-  stroke: #2b00ff;
-  stroke-opacity: 0.4;
-  fill: #2b00ff;
-  fill-opacity: 0.1772727273;
-  -webkit-animation-delay: -0.7333333333s;
-          animation-delay: -0.7333333333s;
+.symbols-item:nth-child(15n + 11) .text--item {
+	stroke: #2b00ff;
+	stroke-opacity: 0.4;
+	fill: #2b00ff;
+	fill-opacity: 0.1772727273;
+	-webkit-animation-delay: -0.7333333333s;
+	animation-delay: -0.7333333333s;
 }
-.symbols-item:nth-child(15n+12) .text--item {
-  stroke: #9500ff;
-  stroke-opacity: 0.4;
-  fill: #9500ff;
-  fill-opacity: 0.175;
-  -webkit-animation-delay: -0.8s;
-          animation-delay: -0.8s;
+.symbols-item:nth-child(15n + 12) .text--item {
+	stroke: #9500ff;
+	stroke-opacity: 0.4;
+	fill: #9500ff;
+	fill-opacity: 0.175;
+	-webkit-animation-delay: -0.8s;
+	animation-delay: -0.8s;
 }
-.symbols-item:nth-child(15n+13) .text--item {
-  stroke: fuchsia;
-  stroke-opacity: 0.4;
-  fill: fuchsia;
-  fill-opacity: 0.1730769231;
-  -webkit-animation-delay: -0.8666666667s;
-          animation-delay: -0.8666666667s;
+.symbols-item:nth-child(15n + 13) .text--item {
+	stroke: fuchsia;
+	stroke-opacity: 0.4;
+	fill: fuchsia;
+	fill-opacity: 0.1730769231;
+	-webkit-animation-delay: -0.8666666667s;
+	animation-delay: -0.8666666667s;
 }
-.symbols-item:nth-child(15n+14) .text--item {
-  stroke: #ff0095;
-  stroke-opacity: 0.4;
-  fill: #ff0095;
-  fill-opacity: 0.1714285714;
-  -webkit-animation-delay: -0.9333333333s;
-          animation-delay: -0.9333333333s;
+.symbols-item:nth-child(15n + 14) .text--item {
+	stroke: #ff0095;
+	stroke-opacity: 0.4;
+	fill: #ff0095;
+	fill-opacity: 0.1714285714;
+	-webkit-animation-delay: -0.9333333333s;
+	animation-delay: -0.9333333333s;
 }
-.symbols-item:nth-child(15n+15) .text--item {
-  stroke: #ff002b;
-  stroke-opacity: 0.4;
-  fill: #ff002b;
-  fill-opacity: 0.17;
-  -webkit-animation-delay: -1s;
-          animation-delay: -1s;
+.symbols-item:nth-child(15n + 15) .text--item {
+	stroke: #ff002b;
+	stroke-opacity: 0.4;
+	fill: #ff002b;
+	fill-opacity: 0.17;
+	-webkit-animation-delay: -1s;
+	animation-delay: -1s;
 }
 
 @-webkit-keyframes offset-direction {
-  25% {
-    transform: translate(-200px, 0);
-  }
-  75% {
-    transform: translate(200px, 0);
-  }
+	25% {
+		transform: translate(-200px, 0);
+	}
+	75% {
+		transform: translate(200px, 0);
+	}
 }
 
 @keyframes offset-direction {
-  25% {
-    transform: translate(-200px, 0);
-  }
-  75% {
-    transform: translate(200px, 0);
-  }
+	25% {
+		transform: translate(-200px, 0);
+	}
+	75% {
+		transform: translate(200px, 0);
+	}
 }
 @-webkit-keyframes anim-move {
-  50% {
-    transform: translate(0, 40px);
-  }
+	50% {
+		transform: translate(0, 40px);
+	}
 }
 @keyframes anim-move {
-  50% {
-    transform: translate(0, 40px);
-  }
+	50% {
+		transform: translate(0, 40px);
+	}
 }
-
 
 /* Animation for rainbow gradient */
 @keyframes rainbow {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
+	0% {
+		background-position: 0% 50%;
+	}
+	100% {
+		background-position: 100% 50%;
+	}
 }
-
