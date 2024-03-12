@@ -1,14 +1,14 @@
 #particles-js {
-  position: fixed; /* Changed from absolute to fixed */
-  width: 100%;
-  height: 100%;
-  background-color: #000000;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  z-index: -1;
-  cursor: default;
-  bottom: 0; /* Added to keep the element at the bottom */
+	position: fixed; /* Changed from absolute to fixed */
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+	z-index: -1;
+	cursor: default;
+	bottom: 0; /* Added to keep the element at the bottom */
 }
 
 #aboutTitle:hover {
@@ -75,7 +75,6 @@
 	display: none;
 	margin-top: 10px;
 }
-
 
 .arrow {
 	background-image: linear-gradient(
@@ -205,11 +204,12 @@ nav li {
 }
 
 li a {
-	background-color: rgba(8, 6, 120, 0.39);
 	border: 1px solid #14197c;
 	border-color: #14197c;
 	font-size: 18px;
-	align-items: center;
+	text-align: center;
+	/* make it glow */
+	background-color: rgba(8, 6, 120, 0.558);
 }
 
 li a:hover {
@@ -272,10 +272,8 @@ main {
 	padding: 2rem;
 }
 
-h1,
-h2 {
-	margin-bottom: 1rem;
-	font: bolder;
+#title {
+	font-size: 3rem;
 }
 
 a {
@@ -325,6 +323,15 @@ form input[type="submit"]:hover {
 html,
 body {
 	height: 100%;
+}
+
+#home_picture {
+	width: 66%;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
 }
 
 img {
